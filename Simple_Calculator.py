@@ -41,11 +41,19 @@ operator_options = OptionMenu(input_frame, operator_var, "addition", "subtractio
 operator_options.grid(row=2, column=1)
 
 # Define a function to be called when the button is pressed
-# Retrieve the values from the input fields and operator selection
+def button_press():
+
+    try:
+        # Retrieve the values from the input fields and operator selection
+        number_one = float(input1.get())
+        number_two = float(input2.get())
+        operator = operator_var.get()
 # Perform the calculation based on the selected operator
 # Display error when the case is dividing by zero
 # Update the result label with the calculated value
-# Handle the case of invalid inputs
+    # Handle the case of invalid inputs
+    except ValueError:
+        print ("Invalid Input. Try again!")
 # Clear the input fields after each calculation
 # Add a label and drop-down menu for selecting the operator
 # Add a button to trigger the calculation
