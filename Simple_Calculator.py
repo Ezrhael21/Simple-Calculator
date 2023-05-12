@@ -18,13 +18,13 @@ input_frame = Frame(window)
 input_frame.pack()
 
 # Add labels and input fields for the two input values
-input1_label = Label(input_frame, text="Input 1:")
+input1_label = Label(input_frame, text="Input 1:", bg="blue")
 input1_label.grid(row=0, column=0)
 
 input1 = Entry(input_frame)
 input1.grid(row=0, column=1)
 
-input2_label = Label(input_frame, text="Input 2:")
+input2_label = Label(input_frame, text="Input 2:", bg="blue")
 input2_label.grid(row=1, column=0)
 
 input2 = Entry(input_frame)
@@ -75,7 +75,7 @@ def button_press():
     input2.delete(0, END)
 
 # Add a button to trigger the calculation
-button = Button(window, text="Calculate", command=button_press)
+button = Button(window, text="Calculate", command=button_press, bg="green" )
 button.pack()
 
 # Add a label to display the calculated result
