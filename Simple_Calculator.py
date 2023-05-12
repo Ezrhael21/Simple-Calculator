@@ -63,13 +63,17 @@ def button_press():
             else:
                 result = number_one / number_two
 
-# Update the result label with the calculated value
+        # Update the result label with the calculated value
+        result_label.config(text=result)
+
     # Handle the case of invalid inputs
     except ValueError:
-        print ("Invalid Input. Try again!")
+        result_label.config(text="Invalid Input. Try again!")
 # Clear the input fields after each calculation
 # Add a label and drop-down menu for selecting the operator
 # Add a button to trigger the calculation
 # Add a label to display the calculated result
+result_label = Label(window, text="")
+result_label.pack()
 # Start the main event loop to keep the window open
 window.mainloop()
