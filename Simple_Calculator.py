@@ -6,6 +6,8 @@
 # User will input 2 numbers and calculate it based on the chosen math operators.
 
 # Import tkinter module to create Graphical User Interface
+from tkinter import *
+
 # Define a function to be called when the button is pressed
 # Retrieve the values from the input fields and operator selection
 # Perform the calculation based on the selected operator
