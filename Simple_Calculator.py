@@ -8,6 +8,9 @@
 # Import tkinter module to create Graphical User Interface
 from tkinter import *
 # Create a new window
+window = Tk()
+window.title("Simple Calculator")
+window.geometry("400x200")
 # Create a frame to hold the input fields
 # Add labels and input fields for the two input values
 # Define a function to be called when the button is pressed
@@ -20,3 +23,4 @@ from tkinter import *
 # Add a button to trigger the calculation
 # Add a label to display the calculated result
 # Start the main event loop to keep the window open
+window.mainloop()
