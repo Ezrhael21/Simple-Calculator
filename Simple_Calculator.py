@@ -7,14 +7,29 @@
 
 # Import tkinter module to create Graphical User Interface
 from tkinter import *
+
 # Create a new window
 window = Tk()
 window.title("Simple Calculator")
 window.geometry("400x200")
+
 # Create a frame to hold the input fields
 input_frame = Frame(window)
 input_frame.pack()
+
 # Add labels and input fields for the two input values
+input1_label = Label(input_frame, text="Input 1:")
+input1_label.grid(row=0, column=0)
+
+input1 = Entry(input_frame)
+input1.grid(row=0, column=1)
+
+input2_label = Label(input_frame, text="Input 2:")
+input2_label.grid(row=1, column=0)
+
+input2 = Entry(input_frame)
+input2.grid(row=1, column=1)
+
 # Define a function to be called when the button is pressed
 # Perform the calculation based on the selected operator
 # Display error when the case is dividing by zero
