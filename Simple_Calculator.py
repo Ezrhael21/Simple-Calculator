@@ -69,11 +69,16 @@ def button_press():
     # Handle the case of invalid inputs
     except ValueError:
         result_label.config(text="Invalid Input. Try again!")
-# Clear the input fields after each calculation
-# Add a label and drop-down menu for selecting the operator
+
+# Clear the input fields after each calculationr
+
 # Add a button to trigger the calculation
+button = Button(window, text="Calculate", command=button_press)
+button.pack()
+
 # Add a label to display the calculated result
 result_label = Label(window, text="")
 result_label.pack()
+
 # Start the main event loop to keep the window open
 window.mainloop()
