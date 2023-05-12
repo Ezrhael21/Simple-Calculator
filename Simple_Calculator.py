@@ -30,7 +30,18 @@ input2_label.grid(row=1, column=0)
 input2 = Entry(input_frame)
 input2.grid(row=1, column=1)
 
+# Add a label and drop-down menu for selecting the operator
+operator_label = Label(input_frame, text="Select Operator:")
+operator_label.grid(row=2, column=0)
+
+operator_var = StringVar(input_frame)
+operator_var.set("addition")
+
+operator_options = OptionMenu(input_frame, operator_var, "addition", "subtraction", "multiplication", "division")
+operator_options.grid(row=2, column=1)
+
 # Define a function to be called when the button is pressed
+# Retrieve the values from the input fields and operator selection
 # Perform the calculation based on the selected operator
 # Display error when the case is dividing by zero
 # Update the result label with the calculated value
