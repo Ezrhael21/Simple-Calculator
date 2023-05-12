@@ -9,6 +9,8 @@
 from tkinter import *
 
 # Define a function to be called when the button is pressed
+def button_press():
+    
 # Retrieve the values from the input fields and operator selection
 # Perform the calculation based on the selected operator
 # Display error when the case is dividing by zero
