@@ -57,8 +57,12 @@ def button_press():
         elif operator == "multiplication":
             result = number_one * number_two
         elif operator == "division":
-            result = number_one / number_two
-# Display error when the case is dividing by zero
+            # Display error when the case is dividing by zero
+            if number_two == 0:
+                result = "Error: Division by Zero"
+            else:
+                result = number_one / number_two
+
 # Update the result label with the calculated value
     # Handle the case of invalid inputs
     except ValueError:
