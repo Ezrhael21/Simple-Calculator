@@ -48,7 +48,16 @@ def button_press():
         number_one = float(input1.get())
         number_two = float(input2.get())
         operator = operator_var.get()
-# Perform the calculation based on the selected operator
+        
+        # Perform the calculation based on the selected operator
+        if operator == "addition":
+            result = number_one + number_two
+        elif operator == "subtraction":
+            result = number_one - number_two
+        elif operator == "multiplication":
+            result = number_one * number_two
+        elif operator == "division":
+            result = number_one / number_two
 # Display error when the case is dividing by zero
 # Update the result label with the calculated value
     # Handle the case of invalid inputs
