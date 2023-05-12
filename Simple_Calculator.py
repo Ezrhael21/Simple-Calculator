@@ -12,6 +12,8 @@ window = Tk()
 window.title("Simple Calculator")
 window.geometry("400x200")
 # Create a frame to hold the input fields
+input_frame = Frame(window)
+input_frame.pack()
 # Add labels and input fields for the two input values
 # Define a function to be called when the button is pressed
 # Perform the calculation based on the selected operator
