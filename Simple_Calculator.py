@@ -70,7 +70,9 @@ def button_press():
     except ValueError:
         result_label.config(text="Invalid Input. Try again!")
 
-# Clear the input fields after each calculationr
+    # Clear the input fields after each calculation
+    input1.delete(0, END)
+    input2.delete(0, END)
 
 # Add a button to trigger the calculation
 button = Button(window, text="Calculate", command=button_press)
